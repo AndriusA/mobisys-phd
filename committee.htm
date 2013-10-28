@@ -1,311 +1,97 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)http://www.sigmobile.org/mobisys/2013/workshops.php#phdForum -->
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <meta charset="utf-8">
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]-->
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/b/378 -->
+<head>
+  <title>MobiSys 2014: PhD Forum</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="Expires" content="-1">
-  <meta http-equiv="Pragma" content="no-cache">
-
-  <title>MobiSys 2013: PhD Forum</title>
-  <meta name="description" content="MobiSys 2013 seeks to present innovative and significant research on the design, implementation, usage, and evaluation of mobile computing and wireless systems, applications, and services.">
+  <meta http-equiv="Pragma" content="no-cache">  
+  <meta name="description" content="MobiSys 2014 seeks to present innovative and significant research on the design, implementation, usage, and evaluation of mobile computing and wireless systems, applications, and services.">
   <meta name="author" content="Ted Lai">
-
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="http://www.sigmobile.org/mobisys/2013/css/style05.css">
+  <link rel="stylesheet" href="style05.css">
+  <link rel="stylesheet" href="style.css">
   <!-- end CSS-->
-
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- Facebook sharing settings: in comment to avoid validation errors -->
   <!--
-	<meta property="og:title" content="MobiSys 2012. The 10th International Conference on Mobile Systems, Applications and Services." />
-	<meta property="og:description" content="MobiSys 2009 seeks to present innovative and significant research on the design, implementation, usage, and evaluation of mobile computing and wireless systems, applications, and services." />
-	<meta property="og:image" content="fbimage.png" />
+  <meta property="og:title" content="MobiSys 2014. The 12th International Conference on Mobile Systems, Applications and Services." />
+  <meta property="og:description" content="MobiSys 2014 seeks to present innovative and significant research on the design, implementation, usage, and evaluation of mobile computing and wireless systems, applications, and services." />
+  <meta property="og:image" content="fbimage.png" />
   -->
-  	<meta property="og:image" content="images/banner.jpg">
+  <meta property="og:image" content="images/banner.jpg">
   
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/ga.js"></script><script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/modernizr-2.0.6.min.js"></script>
-<style type="text/css">
-nav {
-	position:relative;
-}
-#overflowNav {
-	position:absolute;
-	top:-30px;
-	right:0px;
-	border-left: 1px solid black;
-	border-top: 1px solid black;
-	display:none;
-}
-</style><script>
-function toggleDiv(id) {
-	var obj = document.getElementById(id);
-	if (obj.style.display == 'block')
-		obj.style.display = 'none';
-	else
-		obj.style.display = 'block';
-}
-
-</script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
-
-
+       <!-- <script src="/img/ga.js"></script><script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/modernizr-2.0.6.min.js"></script>-->
+</head>
 
 <body id="workshops" style="background-color:#ddd">
 
-  <div id="container" style="
-  -moz-box-shadow:    0px 1px 5px 3px #bbb;
-  -webkit-box-shadow: 0px 1px 5px 3px #bbb;
-  box-shadow:         0px 1px 5px 3px #bbb;">
+  <div id="container">
     <header>
-    	<section class="sponsors">
-			<h3 style="margin-left:5px;margin-right:0px">Sponsors:</h3>
-    		<ul class="clearfix">
-				<!--
-				<li><a href="http://www.acm.org/"><img alt="ACM" src="./img/acm_h_36.png"></a></li>
-				<li><a href="http://www.sigmobile.org/"><img alt="SIGMobile" src="./img/sigmobile_h_36.png"></a></li>		
-				<li><a href="http://www.microsoft.com/"><img alt="Microsoft" src="./img/msr_h_36.png"></a></li>		
-				-->
-				<li><a href="http://www.google.com/"><img alt="Google" src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/google_logo_shaded.jpg" height="40"></a></li>
-			</ul>
-    	</section>
-    	
-<style type="text/css">
-.title a.closeBtn {
-display:block;position:absolute; top:1px; right:1px; font-weight:bold; border:1px solid #aaa; 
-font-size:10px; line-height:8px; height:10px;width:10px; text-align:center; color: #aaa;
-text-decoration:none;
-}
-.title a.closeBtn:hover {
-	border: 1px solid black;
-	color: black;
-}
-   
-   
-.photoAttrib {
-position:absolute;
-width: 200px;
-top:0px;
-height: 264px;
-left:0px;
-overflow:hidden;
-}
-.photoAttrib a#showLink {
-	position: absolute;
-	padding: 0px 4px; 
-	bottom:1px; left:2px; 
-	font-size:8pt;
-	display:block;
-	color: #aaa;
-	border:1px solid #aaa;
-	text-decoration:none;
-	background-color: black;
-}
+      <section class="sponsors">
+      <h3 style="margin-left:5px;margin-right:0px">Sponsors:</h3>
+        <ul class="clearfix">
+        <!--
+        <li><a href="http://www.acm.org/"><img alt="ACM" src="./img/acm_h_36.png"></a></li>
+        <li><a href="http://www.sigmobile.org/"><img alt="SIGMobile" src="./img/sigmobile_h_36.png"></a></li>   
+        <li><a href="http://www.microsoft.com/"><img alt="Microsoft" src="./img/msr_h_36.png"></a></li>   
+        -->
+        <!--<li><a href="http://www.google.com/"><img alt="Google" src="/img/google_logo_shaded.jpg" height="40"></a></li>-->
+      </ul>
+      </section>
+      
+      <section class="title" style="position:relative">
+        <a href="http://www.sigmobile.org/mobisys/2014/index.php" target="blank"><img src="img/bannerlogo.jpg" width="100%" ></a>
 
-.photoAttrib a#showLink:hover, #photoInfo a#hideLink:hover {
-	color:#fff;
-	border-color: #fff;
-}
-
-#photoInfo a#hideLink {
-	position:absolute;
-	padding: 0px 14px; 
-	font-size:8pt;
-	display:block;
-	color: #aaa;
-	border:1px solid #aaa;
-	text-decoration:none;
-	bottom:1px;
-	left:2px;
-}
-
-.photoAttrib #photoInfoPane {
-	position:absolute;
-	width: 200px;
-	top:0px;
-	height: 264px;
-	left:-200px;
-	background-color: black;
-	color:white;
-}
-.photoAttrib #photoInfo {
-	position:absolute;
-	width: 180px;
-	top:0px;
-	height: 224px;
-	left:-200px;
-	color:white;
-	font-size: 8pt;
-	padding: 20px 10px;
-}
-#photoInfo a {
-	color: #ddeeff;
-}
-
-#photoInfo .flick {
-	font-size:10pt;
-	font-weight:bold;
-	color: #00aaff;
-}
-#photoInfo .flickr {
-	font-size:10pt;
-	font-weight:bold;
-	color: #ff00aa;
-}
-a.aflickr {
-	text-decoration:none;
-}
-a.aflickr:hover {
-	text-decoration:underline;
-}
-#photoInfo p {
-display:block;
-text-align: left;
-}
-</style>
-
-<script>
-function photoInfo() {
-$('#showLink').hide();
-$('#photoInfoPane').css({opacity:0.7});
-$('#photoInfoPane').animate({
-    left: '+=200'
-  }, 300, function() {
-    // Animation complete.
-  });
-$('#photoInfo').animate({
-    left: '+=200'
-  }, 300, function() {
-    // Animation complete.
-  });	
-}
-
-function photoInfoHide() {
-	$('#showLink').show();
-	$('#photoInfoPane').animate({
-	    left: '-=200'
-	  }, 300, function() {
-	    // Animation complete.
-	  });
-	$('#photoInfo').animate({
-	    left: '-=200'
-	  }, 300, function() {
-	    // Animation complete.
-	  });	
-	
-}
-</script>
-    	<section class="title" style="position:relative">
-    		<a href="http://www.sigmobile.org/mobisys/2013/index.php" target="blank"><img src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/banner.jpg" width="800" height="264"></a>
-				
-		</section>
-		<nav class="clearfix" style="width:800; overflow:hide"> 
-			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/home.htm">HOME</a>
-			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/cfs.htm">Call for Submissions</a>
-	 		<a href="committee.htm" class="selected">Committess and Panel</a>
-			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/presenter.htm">Presenter Instructions</a>
-			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/program.htm">Program</a>
-		</nav>
+        
+    </section>
+    <nav class="clearfix" style="width:800; overflow:hide"> 
+      <a href="index.htm">HOME</a>
+      <a href="cfs.htm">Call for Submissions</a>
+      <a href="committee.htm" class="selected">Committess and Panel</a>
+      <a href="presenter.htm">Presenter Instructions</a>
+      <a href="program.htm">Program</a>
+    </nav>
     </header>
 
     <div id="main" role="main" style="padding:0px">
 
-<style type="text/css">
+  <section class="wsMenu">
+    <h1>MobiSys 2014: PhD Forum (June 16th, 2014)</h1>   
+  </section>
 
-.wsMenu {
-	padding: 15px 25px;
-}
-.wsMenu ul {
-	background-color: #e0e8ff; 
-	padding: 4px 4px ;
-	margin:0px;
-}
-.wsMenu li {
-	list-style:none;
-}
-.wsMenu li a, .wsInfo h2 a {
-	display:block;
-	padding: 3px 15px;
-	color: #000088;
-	text-decoration:none;
-}
-.wsMenu li a:hover, .wsInfo h2 a:hover {
-	background-color: #7074aa;
-	color: #ffffff;
-}
-
-.wsInfo {
-	padding: 15px 25px;
-	border-top: 3px solid #ee8538;
-}
-.wsInfo h2 { margin-top: 0px; 
-padding-right: 120px;
-position:relative;}
-
-.wsInfo h3 {margin-top: 20px}
-
-.wsInfo h2 a {
-	font-size: 10pt;
-	font-weight: normal;
-	position:absolute;
-	right: 0px;
-	top: 0px;
-	background-color: #e0e8ff;
-}
-
-</style>
-
-	<section class="wsMenu">
-		<h1>MobiSys 2013: PhD Forum (June 25th, 2013)</h1>   
-	</section>
-
-		<section class="wsInfo" id="phdForum">
+    <section class="wsInfo" id="phdForum">
 			<h2>Committess and Panel</h2>
 			<h3>General Chairs</h3>
-			<p>
-			Kuldeep Yadav (Indraprastha Institute of Information Technology)<br>
-			Rohit Chaudhri (University of Washington)<br>
-			Youngki Lee (Singapore Management University)<br>
-			Yohan Chon (Yonsei University)
-			</p>
-			<h3>Panel Members</h3>
-			<p>
-			<a href="http://mslab.kaist.ac.kr/wiki/wiki.cgi?UichinLee" target="blank">Uichin Lee</a> (KAIST)<br>
-			<a href="http://www.winlab.rutgers.edu/~gruteser/" target="blank">Marco Gruteser</a> (Rutgers University)<br>
-			<a href="http://niclane.org/" target="blank">Nic Lane</a> (Microsoft Research, Asia)<br>
-			<a href="http://research.microsoft.com/en-us/people/krchinta/" target="blank">Krishna Chintalapudi</a> (Microsoft Research, India)
-			</p>
-			<h3>Reviewers</h3>
-			<p>
-			Rijurekha Sen (IIT Bombay)<br>
-			Waylon Brunette (University of Washington)<br>
-			Michael Paik (New York University)<br>
-			Aaron Schulman (University of Maryland)<br>
-			Tam Vu (Winlab, Rutgers University)<br>
-			Taiwoo Park (KAIST)<br>
-			Younghyun Ju (KAIST)
-			</p>
+			<ul>
+  			<li><a href="http://www.cl.cam.ac.uk/~aa535/">Andrius Aucinas (University of Cambridge)</a></li>
+  			<li><a href="http://www.cs.helsinki.fi/u/yding/homepage.html">Aaron Yi Ding (University of Helsinki)</a></li>
+  			<li><a href="http://www.cs.dartmouth.edu/~aarathi/">Aarathi Prasad (Dartmouth College)</a></li>
+  			<li><a href="http://www.owlnet.rice.edu/~aa15/">Ardalan Amiri Sani (Rice University)</a></li>
+      </ul>
+			<!-- <h3>Panel Members</h3> -->
+			
+			<!-- <h3>Reviewers</h3> -->
+			
 		</section>
     </div>
     <footer>
-    	<section id="lowerFooter" class="clearfix">
-			<nav class="clearfix"> 
-			<a href="http://www.sigmobile.org/mobisys/2013/index.php" target="blank">MobiSys'13</a>
-			<a href="https://sites.google.com/site/mobisys2011phdforum/home" target="blank">PhD Forum'11</a>
-			</nav>
-		</section>
-    	
+      <section id="lowerFooter" class="clearfix">
+      <nav class="clearfix"> 
+      <a href="http://www.sigmobile.org/mobisys/2014/" target="blank">MobiSys'14</a>
+      <a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/" target="blank">PhD Forum'13</a>
+      </nav>
+    </section>
     </footer>
   </div> <!--! end of #container -->
 
@@ -313,27 +99,27 @@ position:relative;}
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="/img/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 
   <!-- scripts concatenated and minified via ant build script-->
-  <script defer="" src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/plugins.js"></script>
-  <script defer="" src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/script.js"></script>
+  <script defer="" src="img/plugins.js"></script>
+  <script defer="" src="js/script.js"></script>
 
   
   <!-- end scripts-->
 
-		
+    
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
-    window._gaq = [['_setAccount','UA-15305295-3'],['_trackPageview'],['_trackPageLoadTime']];
+    window._gaq = [['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
   
-	
+  
 
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
@@ -342,7 +128,6 @@ position:relative;}
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-  
+</body>
 
-
-</body></html>
+</html>

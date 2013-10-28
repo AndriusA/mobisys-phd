@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://www.sigmobile.org/mobisys/2013/workshops.php#phdForum -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <title>MobiSys 2013: PhD Forum</title>
+  <meta name="description" content="MobiSys 2013 seeks to present innovative and significant research on the design, implementation, usage, and evaluation of mobile computing and wireless systems, applications, and services.">
+  <meta name="author" content="Ted Lai">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="http://www.sigmobile.org/mobisys/2013/css/style05.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- Facebook sharing settings: in comment to avoid validation errors -->
+  <!--
+	<meta property="og:title" content="MobiSys 2012. The 10th International Conference on Mobile Systems, Applications and Services." />
+	<meta property="og:description" content="MobiSys 2009 seeks to present innovative and significant research on the design, implementation, usage, and evaluation of mobile computing and wireless systems, applications, and services." />
+	<meta property="og:image" content="fbimage.png" />
+  -->
+  	<meta property="og:image" content="images/banner.jpg">
+  
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/ga.js"></script><script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/modernizr-2.0.6.min.js"></script>
+<style type="text/css">
+nav {
+	position:relative;
+}
+#overflowNav {
+	position:absolute;
+	top:-30px;
+	right:0px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	display:none;
+}
+</style><script>
+function toggleDiv(id) {
+	var obj = document.getElementById(id);
+	if (obj.style.display == 'block')
+		obj.style.display = 'none';
+	else
+		obj.style.display = 'block';
+}
+
+</script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
+
+
+
+<body id="workshops" style="background-color:#ddd">
+
+  <div id="container" style="
+  -moz-box-shadow:    0px 1px 5px 3px #bbb;
+  -webkit-box-shadow: 0px 1px 5px 3px #bbb;
+  box-shadow:         0px 1px 5px 3px #bbb;">
+    <header>
+    	<section class="sponsors">
+			<h3 style="margin-left:5px;margin-right:0px">Sponsors:</h3>
+    		<ul class="clearfix">
+				<!--
+				<li><a href="http://www.acm.org/"><img alt="ACM" src="./img/acm_h_36.png"></a></li>
+				<li><a href="http://www.sigmobile.org/"><img alt="SIGMobile" src="./img/sigmobile_h_36.png"></a></li>		
+				<li><a href="http://www.microsoft.com/"><img alt="Microsoft" src="./img/msr_h_36.png"></a></li>		
+				-->
+				<li><a href="http://www.google.com/"><img alt="Google" src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/google_logo_shaded.jpg" height="40"></a></li>
+			</ul>
+    	</section>
+    	
+<style type="text/css">
+.title a.closeBtn {
+display:block;position:absolute; top:1px; right:1px; font-weight:bold; border:1px solid #aaa; 
+font-size:10px; line-height:8px; height:10px;width:10px; text-align:center; color: #aaa;
+text-decoration:none;
+}
+.title a.closeBtn:hover {
+	border: 1px solid black;
+	color: black;
+}
+   
+   
+.photoAttrib {
+position:absolute;
+width: 200px;
+top:0px;
+height: 264px;
+left:0px;
+overflow:hidden;
+}
+.photoAttrib a#showLink {
+	position: absolute;
+	padding: 0px 4px; 
+	bottom:1px; left:2px; 
+	font-size:8pt;
+	display:block;
+	color: #aaa;
+	border:1px solid #aaa;
+	text-decoration:none;
+	background-color: black;
+}
+
+.photoAttrib a#showLink:hover, #photoInfo a#hideLink:hover {
+	color:#fff;
+	border-color: #fff;
+}
+
+#photoInfo a#hideLink {
+	position:absolute;
+	padding: 0px 14px; 
+	font-size:8pt;
+	display:block;
+	color: #aaa;
+	border:1px solid #aaa;
+	text-decoration:none;
+	bottom:1px;
+	left:2px;
+}
+
+.photoAttrib #photoInfoPane {
+	position:absolute;
+	width: 200px;
+	top:0px;
+	height: 264px;
+	left:-200px;
+	background-color: black;
+	color:white;
+}
+.photoAttrib #photoInfo {
+	position:absolute;
+	width: 180px;
+	top:0px;
+	height: 224px;
+	left:-200px;
+	color:white;
+	font-size: 8pt;
+	padding: 20px 10px;
+}
+#photoInfo a {
+	color: #ddeeff;
+}
+
+#photoInfo .flick {
+	font-size:10pt;
+	font-weight:bold;
+	color: #00aaff;
+}
+#photoInfo .flickr {
+	font-size:10pt;
+	font-weight:bold;
+	color: #ff00aa;
+}
+a.aflickr {
+	text-decoration:none;
+}
+a.aflickr:hover {
+	text-decoration:underline;
+}
+#photoInfo p {
+display:block;
+text-align: left;
+}
+</style>
+
+<script>
+function photoInfo() {
+$('#showLink').hide();
+$('#photoInfoPane').css({opacity:0.7});
+$('#photoInfoPane').animate({
+    left: '+=200'
+  }, 300, function() {
+    // Animation complete.
+  });
+$('#photoInfo').animate({
+    left: '+=200'
+  }, 300, function() {
+    // Animation complete.
+  });	
+}
+
+function photoInfoHide() {
+	$('#showLink').show();
+	$('#photoInfoPane').animate({
+	    left: '-=200'
+	  }, 300, function() {
+	    // Animation complete.
+	  });
+	$('#photoInfo').animate({
+	    left: '-=200'
+	  }, 300, function() {
+	    // Animation complete.
+	  });	
+	
+}
+
+function showHide(id) {
+   var obj = document.getElementById(id);
+   if (obj.style.display == 'none')
+       obj.style.display = 'block';
+   else
+       obj.style.display = 'none';
+}
+</script>
+    	<section class="title" style="position:relative">
+    		<a href="http://www.sigmobile.org/mobisys/2013/index.php" target="blank"><img src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/banner.jpg" width="800" height="264"></a>
+				
+		</section>
+		<nav class="clearfix" style="width:800; overflow:hide"> 
+			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/home.htm">HOME</a>
+			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/cfs.htm">Call for Submissions</a>
+	 		<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/committee.htm">Committess and Panel</a>
+			<a href="http://lifemap.yonsei.ac.kr/mobisysphdforum/presenter.htm">Presenter Instructions</a>
+			<a href="program.htm" class="selected">Program</a>
+		</nav>
+    </header>
+
+    <div id="main" role="main" style="padding:0px">
+
+<style type="text/css">
+
+.wsMenu {
+	padding: 15px 25px;
+}
+.wsMenu ul {
+	background-color: #e0e8ff; 
+	padding: 4px 4px ;
+	margin:0px;
+}
+.wsMenu li {
+	list-style:none;
+}
+.wsMenu li a, .wsInfo h2 a {
+	display:block;
+	padding: 3px 15px;
+	color: #000088;
+	text-decoration:none;
+}
+.wsMenu li a:hover, .wsInfo h2 a:hover {
+	background-color: #7074aa;
+	color: #ffffff;
+}
+
+.wsInfo {
+	padding: 15px 25px;
+	border-top: 3px solid #ee8538;
+}
+.wsInfo h2 { margin-top: 0px; 
+padding-right: 120px;
+position:relative;}
+
+.wsInfo h3 {margin-top: 20px}
+
+.wsInfo h2 a {
+	font-size: 10pt;
+	font-weight: normal;
+	position:absolute;
+	right: 0px;
+	top: 0px;
+	background-color: #e0e8ff;
+}
+
+</style>
+
+	<section class="wsMenu">
+		<h1>MobiSys 2013: PhD Forum (June 25th, 2013)</h1>   
+	</section>
+
+		<section class="wsInfo" id="phdForum">
+			<h2>1:50 PM Opening Remarks
+			</h2>
+			<h2>2:00 PM Session 1</h2>
+			<h4>Shrirang Mare, <a onclick="showHide('shrirang')" onfocus="this.blur()">"ZEBRA: For secure and seamless device interaction,"</a> Dartmouth College</h4>
+			<p><div id="shrirang" style="display:none">
+			Although computing devices have become ubiquitous, users' interaction with them is not as seamless and 'invisible' as it should be in ubiquitous computing. These aspects are particularly challenging for security interfaces. We identify two main problems, which if resolved would reduce the effort required to interact with devices, making the experience more seamless for the users and would improve security on devices: i) effortless user authentication, and ii) continuous user authentication. We propose to tackle these problems using a new authentication scheme called Zero-Effort Bilateral Recurring Authentication (ZEBRA). In ZEBRA users wear a wireless wrist bracelet all the time (or at least when they interact with devices), and this bracelet assists devices in initial authentication and continuously reaffirms the identity of the device user.
+			</div></p>
+			<h4>Kaikai Liu and Xiaolin Li, <a onclick="showHide('kaikai')" onfocus="this.blur()">"Guoguo: Smartphone-based High-precision Indoor Location Ecosystem and Services,"</a> University of Florida</h4>
+			<p><div id="kaikai" style="display:none">
+			Locating a smartphone at the centimeter-level has significant implication for potential indoor location services and applications compared with existing coarse-grained solutions. In this paper, we propose Guoguo ecosystem to fill the longlasting gap of smartphone-based indoor localization. Guoguo consists of a constellation of low-complexity anchor network that enabling fine-grained localization by leveraging modulated acoustic beacons. We propose algorithms to improve its robustness, coverage, accuracy, and refresh rate. Our prototype shows centimeter-level localization accuracy and promising for real deployment and application. Such results are expected to make smartphone indoor localization available in our daily activities.
+			</div></p>
+			<h4>Kartik Muralidharan, <a onclick="showHide('kartik')" onfocus="this.blur()">"Jarvis: A Context-Aware Adaptive Intervention Engine,"</a> Singapore Management University</h4>
+			<p><div id="kartik" style="display:none">
+			Context is defined as any information that can be used to characterize the situation of an entity, where an entity can be a person, place, or physical or computational object. Context-awareness or context-aware computing is the use of this context to provide task-relevant information and/or services to a user. With the advent of smartphones, one has access to large amount of highly contextual data making possible several context aware services that weren't before. In this work I give an overview of the design of Jarvis: an experimentation platform, that helps service providers get a better understanding of the underlying user context.
+			</div></p>
+			<h2>3:00 PM Break</h2>
+			<h2>3:20 PM Session 2</h2>
+			<h4>Tan Kiat Wee, <a onclick="showHide('tan')" onfocus="this.blur()">"(Resource) Efficient Scalable Deep Context Sensing for Mobile Systems (Apps),"</a> Singapore Management University</h4>
+			<p><div id="tan" style="display:none">
+			This dissertation research aims to developed and build a mobile deep context collector that is not only able to sense human activity accurately, but also perform such collection in a scalable and resource-efficient manner that additionally does not disrupt the usability of different applications. This research direction is motivated both by the rapid adoption of mobile devices, especially smartphones, by consumers worldwide, and by the changing patterns of content con- sumption and creation on these devices. These changes has seen new use cases (social, financial, communication, cloud- computing, content consumption, etc) beyond the traditional communication tool of a phone. This makes mobile de- vices an attractive research domain where new insights can be learned from the user as well as new and radical system trade-offs (power, scale, user annoyance) can be achieved at the same time. In this dissertation work, I will focus on the four key areas, (resource) efficiency, scalability, minimising user disruption and building of useful apps in different do- mains that utilised parts or all of these areas.
+			</div></p>
+			<h4>Chungkuk Yoo, <a onclick="showHide('chungkuk')" onfocus="this.blur()">"Towards Total Recall: A Mobile Platform for Centripetal Lifelogging in Everyday Life,"</a> KAIST</h4>
+			<p><div id="chungkuk" style="display:none">
+			Life monitoring services are emerging as promising mobile applications, pursuing to build a user's autobiographical memories. To date, initial attempts of lifelogging services have been proposed, capturing what I see, hear, meet, and visit. These empirical and environmental contexts, centrifugal contexts, may help a user reminisce about the past. On the other hand, I focus on an important key feature of lifelogging which has been unexplored so far, i.e., centripetal context. The centripetal context is about oneself including inner world, appearance, reaction to external stimulation and social image in others' eyes, etc. With centripetal lifelogging in a fine-granule and momentary manner, lifelogging services enable not only total recall of a user but also centripetal context aware services. In my thesis, I propose a full-fledged everyday mobile platform for fine-granule centripetal lifelogging in a fine-granule and momentary manner.
+			</div></p>
+			<h4>Huber Flores and Satish Narayana Srirama, <a onclick="showHide('huber')" onfocus="this.blur()">"Adaptive Code Offloading and Resource-intensive Task Delegation for Mobile Cloud Applications,"</a> Tartu University</h4>
+			<p><div id="huber" style="display:none">
+			Mobile cloud computing is arising as a prominent domain that is seeking to bring the massive advantages of the cloud to the resource constrained smartphones, by following a delegation or offloading criteria. In a delegation model, a mobile device consumes services from multiple clouds by following their Web API. In the offloading model, a mobile application is partitioned and analyzed so that the most computational expensive operations at code level can be identifid and offladed for remote processing. This paper proposes a mobile cloud architecture that enhances the decision of offloading process with asynchronous cloud processing that targets cloud infrastructure and code offloading traces, also taking advantage of the middleware based delegation model.
+			</div></p>
+			<h4>Xiping Hu and Victor C.M. Leung, <a onclick="showHide('xiping')" onfocus="this.blur()">"Application-oriented Mobile Social Networking System for Mobile Crowdsourcing,"</a> The University of British Colombia</h4>
+			<p><div id="xiping" style="display:none">
+			With mobile devices providing ubiquitous access to social network applications and services, there is a remarkable trend to utilize mobile crowdsourcing to handle a diversity of problems that involve real-time data collection and processing, and collaborations among numerous participants through their mobile devices. Beyond previous work on mobile crowdsensing, which has mainly considered the processing of diverse sensing data through mobile devices, mobile crowdsourcing may further be applied to exploit the collection of human intelligence through users' mobile devices, and the interactions between human intelligence and services of mobile devices. This not only could provide ubiquitous services to users, but also promote human collaboration. Thus, mobile crowdsourcing potentially could be applied to various application areas and bring huge economic benefits to important areas in society; e.g., in transportation it could help to improve the transportation efficiency, in disaster situations it could provide an efficient and effective means of supporting rescue operations immediately after disasters, facilitate disease report and crisis management, and so on.
+			</div></p>
+			<h2>4:40 PM Break</h2>
+			<h2>5:00 PM Round Table Discussion</h2>
+			<h2>5:20 PM Forum Close</h2>
+			<!--<h4>Yichuan Wang, <a onclick="showHide('yichuan')" onfocus="this.blur()">"User Behavior Modeling and Adaptation on Mobile Device,"</a> UC Davis</h4>
+			<p><div id="yichuan" style="display:none">
+			With the rapid growth of mobile Internet, mobile platform and services are becoming more and more per- sonalized. Understanding and more importantly, adapt to user behaviors are crucial to providing efficient and user-friendly mobile platform and services. Users interact with mobile applications. The mobile applications in turn reply on the mobile platform, mo- bile Internet and the underlying hardware. Mobile de- vices are constantly receiving signals from the abundant sensors and radio chips installed on them. These con- text informations also help us efficiently identify user behavior. User behavior is multi-dimensional. We focus on the following aspects in this work: 1) User network con- dition and content transfer. 2) Content consumption on mobile social media. 3) Mobile application network behavior and optimization. In each aspects, we collect data about user history behavior, develop a mathematical model based on these data, and utilize the model to optimize performance.
+			</div></p>-->
+		</section>
+    </div>
+    <footer>
+    	<section id="lowerFooter" class="clearfix">
+			<nav class="clearfix"> 
+			<a href="http://www.sigmobile.org/mobisys/2013/index.php" target="blank">MobiSys'13</a>
+			<a href="https://sites.google.com/site/mobisys2011phdforum/home" target="blank">PhD Forum'11</a>
+			</nav>
+		</section>
+    	
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://lifemap.yonsei.ac.kr/mobisysphdforum/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer="" src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/plugins.js"></script>
+  <script defer="" src="http://lifemap.yonsei.ac.kr/mobisysphdforum/img/script.js"></script>
+
+  
+  <!-- end scripts-->
+
+		
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UA-15305295-3'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+  
+	
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+
+
+</body></html>
